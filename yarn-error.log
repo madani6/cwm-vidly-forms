@@ -1,0 +1,46 @@
+Arguments: 
+  /home/user/.nvm/versions/node/v10.15.3/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/user/.nvm/versions/node/v10.15.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.15.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, rmdir '/home/user/codewithmosh/vidly-forms/node_modules/.cache/babel-loader'
+
+npm manifest: 
+  {
+    "name": "vidly",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "bootstrap": "^4.1.1",
+      "font-awesome": "^4.7.0",
+      "lodash": "^4.17.10",
+      "prop-types": "^15.6.2",
+      "react": "^16.4.1",
+      "react-dom": "^16.4.1",
+      "react-router-dom": "^4.3.1",
+      "react-scripts": "1.1.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
