@@ -2,15 +2,11 @@ import React, { Component } from "react";
 
 class LoginForm extends Component {
   state = {
-    account: { username: "", password: "" }
+    account: { username: null, password: "" }
   };
 
   handleSubmit = e => {
     e.preventDefault();
-
-    // call the server
-
-    console.log("Submitted");
   };
 
   handleChange = ({ currentTarget: input }) => {
@@ -20,10 +16,9 @@ class LoginForm extends Component {
   };
 
   render() {
-    const account = this.state;
-
+    const { account } = this.state;
     return (
-      <div className="container">
+      <div>
         <h1>Login</h1>
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
@@ -44,7 +39,7 @@ class LoginForm extends Component {
               onChange={this.handleChange}
               name="password"
               id="password"
-              type="password"
+              type="text"
               className="form-control"
             />
           </div>
